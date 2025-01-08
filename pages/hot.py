@@ -37,7 +37,7 @@ def part2():
             'Title':'热点',
             'HotValue':'热度',
             'LabelUrl':st.column_config.ImageColumn('类型',width=70),
-            'Url':st.column_config.LinkColumn('详情',display_text='查看',width=50)
+            'Url':st.column_config.LinkColumn('详情',display_text='查看',width=50,disabled=True)
 
         },
         height=500,
