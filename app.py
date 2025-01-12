@@ -3,6 +3,8 @@ import streamlit_shadcn_ui as ui
 import pandas as pd
 import numpy as np
 
+
+st.set_page_config(layout="wide")
 def index():
     st.title("主页")
 
@@ -52,10 +54,15 @@ def index():
         bytes_data = uploaded_ad.getvalue()
         st.audio(bytes_data,format="audio/mpeg")
 
+    with ui.card():
+        ui.element("input", key="nst2_input", label="Value")
+        ui.element("button", key="nst2_btn", text="Nest Submmit", variant="outline")
+
+
 pages = {
     "首页":[st.Page(index,title="首页",icon="🏠")],
     "数据分析":[st.Page('mypages/bi.py')],
-    "新闻热点":[st.Page('mypages/hot.py')],
+    "新闻热点":[st.Page('mypages/hot.py',title="新闻热点",icon="🔥")],
 }
 
 pg = st.navigation(pages)

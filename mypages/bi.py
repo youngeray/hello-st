@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from pygwalker.api.streamlit import StreamlitRenderer
 
-# st.set_page_config(page_title="数据分析",page_icon="🔥",layout="wide")
 
 st.header("数据分析")
 
