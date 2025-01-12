@@ -3,7 +3,7 @@ import pandas as pd
 from scripts.weibohot import get_weibo_hot
 from scripts.toutiaohot import get_toutiao_hot
 
-st.set_page_config(page_title="新闻热点",page_icon="🔥",layout="wide")
+# st.set_page_config(page_title="新闻热点",page_icon="🔥",layout="wide")
 
 @st.cache_data(ttl=120)
 def get_weibo():
