@@ -1,8 +1,9 @@
 import requests
+import streamlit as st
 import json
 
 def get_weibo_hot():
-    url = 'https://weibo.com/ajax/side/searchBand?last_tab=hot'  # 替换为你的URL
+    url = st.secrets['weibo_url']  # 替换为你的URL
     headers = {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',

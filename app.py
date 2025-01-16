@@ -59,6 +59,7 @@ def index():
         ui.element("button", key="nst2_btn", text="Nest Submmit", variant="outline")
 
 
+
 pages = {
     "首页":[st.Page(index,title="首页",icon="🏠")],
     "数据分析":[st.Page('mypages/bi.py')],
