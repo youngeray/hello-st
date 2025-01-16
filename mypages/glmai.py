@@ -14,6 +14,7 @@ if prompt:
     st.session_state.all_images.append(image_data)
     for image in st.session_state.all_images:
         st.image(image['url'],caption=image['prompt'],width=300)
+    st.toast('图片已生成！', icon='🎉')
         
 
 
