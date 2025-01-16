@@ -64,6 +64,7 @@ pages = {
     "首页":[st.Page(index,title="首页",icon="🏠")],
     "数据分析":[st.Page('mypages/bi.py')],
     "新闻热点":[st.Page('mypages/hot.py',title="新闻热点",icon="🔥")],
+    "24天气":[st.Page('mypages/weathers.py',title="天气查询",icon="🌤️")],
 }
 
 pg = st.navigation(pages)
