@@ -30,7 +30,8 @@ def get_ithome():
 
 
 
-weibo,toutiao,thepaper,ithome = st.tabs(["微博热搜",'头条热点','澎湃新闻','IT之家'])
+
+weibo,toutiao,thepaper,ithome,bbczw = st.tabs(["微博热搜",'头条热点','澎湃新闻','IT之家','bbc中文网'])
 
 
 @st.fragment()
@@ -102,6 +103,7 @@ def part4():
         },
         height=500,
     )
+
 
 
 part1()
