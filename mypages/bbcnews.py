@@ -19,11 +19,6 @@ news = get_bbczw()
 
 for item in news:
     container = st.container(border=True)
-    # container.markdown(f"##### {item['word']}")
-    container.html(f"""
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-            <h3 style="margin: 0; flex-basis: 66.67%; padding-right: 10px;">{item['word']}</h3>
-            <img src="{item['img']}" style="flex-basis: 33.33%; max-width: 33.33%; object-fit: contain;">
-        </div>
-        """)
+    container.markdown(f"##### {item['word']}")
+    container.image(item['img'])
     container.button("查看详情",on_click=show_news_detail,args=(item,),key=item['word'])
