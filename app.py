@@ -20,7 +20,7 @@ pages = {
     "首页":[st.Page(index,title="首页",icon="🏠")],
     "新闻热点":[st.Page('mypages/hot.py',title="新闻热点",icon="🔥"),st.Page('mypages/bbcnews.py',title="BBC中文",icon="📰"),st.Page('mypages/zuqiunews.py',title="足球新闻",icon="⚽")],
     "24天气":[st.Page('mypages/weathers.py',title="天气查询",icon="🌤️")],
-    "智能AI":[st.Page('mypages/glmai.py',title="AI绘图",icon="🖼️")],
+    "智能AI":[st.Page('mypages/glmai.py',title="AI绘图",icon="🖼️"),st.Page('mypages/aichat.py',title="AI聊天助手",icon="🔥")],
     "数据分析":[st.Page('mypages/bi.py',title="BI分析",icon="📊"),st.Page('mypages/example.py',title="例子",icon="🔥")]
 }
 
