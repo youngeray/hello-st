@@ -37,7 +37,7 @@ if webcontent := st.chat_input("请输入网址"):
             model="glm-4-flash",  # 或其他支持的模型
             messages=[
                 {"role": "system", "content": "你是一个ai新闻助手，根据用户输入的新闻网页中的内容，整理出新闻标题和对应的链接"},
-                {"role": "user", "content": f'请整理出以下网页中的新闻，以markdown的格式输出新闻标题和对应的链接：{prompt}'},
+                {"role": "user", "content": f'请整理出以下网页中的新闻，输出新闻标题和对应的链接：{prompt}'},
             ],
             stream=True
         )
